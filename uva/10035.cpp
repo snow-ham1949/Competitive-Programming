@@ -13,7 +13,7 @@ typedef pair<ll, ll> pll;
 void solve()
 {
   ll n, m;
-  while (scanf("%lld%lld", &n, &m) == 2 && n != 0 && m != 0) {
+  while (scanf("%lld%lld", &n, &m) == 2 && (n || m)) {
     ll carry = 0, cnt = 0;
     while (n != 0 || m != 0) {
       if ((n % 10 + m % 10 + carry) >= 10) {
