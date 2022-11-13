@@ -14,9 +14,9 @@ void solve()
 {
   ll n, m;
   while (scanf("%lld%lld", &n, &m) == 2 && n != 0 && m != 0) {
-    int carry = 0, cnt = 0;
+    ll carry = 0, cnt = 0;
     while (n != 0 || m != 0) {
-      if (n % 10 + m % 10 + carry >= 10) {
+      if ((n % 10 + m % 10 + carry) >= 10) {
         carry = 1;
         cnt++;
       } else {
@@ -29,10 +29,10 @@ void solve()
       printf("No carry operation.\n");
     }
     else if (cnt == 1) {
-      printf("%d carry operation.\n", cnt);
+      printf("%lld carry operation.\n", cnt);
     }
     else {
-      printf("%d carry operations.\n", cnt);
+      printf("%lld carry operations.\n", cnt);
     }
   }
 }
