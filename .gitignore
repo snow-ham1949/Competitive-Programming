@@ -3,5 +3,6 @@
 *.in
 *.out
 *.txt
+*.swp
 cf/**/vir/
 cf/**/study\ group
